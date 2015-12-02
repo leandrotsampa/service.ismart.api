@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Geral">
+		<setting label="Log" type="lsep"/>
+		<setting id="LOG_PADRAO" type="bool" label="Pasta padrão" default="true" />
+		<setting id="LOG_PASTA" label="Novo caminho:" type="folder" source="auto" option="writeable" visible="eq(-1,false)" />
+		
+		<setting type="sep" />
+		<setting label="Login" type="lsep"/>
+		<setting id="WEB_LOGIN" label="Ativar" type="bool" default="true" />
+		<setting id="WEB_USER" label="Usuário:" type="text" default="myuser" visible="eq(-1,true)" />
+		<setting id="WEB_PWD" label="Senha:" type="text" option="hidden" default="mypass" visible="eq(-2,true)" />
+		<setting id="WEB_PORT" label="Porta:" type="number" default="8889" />
+    </category>
+</settings>
